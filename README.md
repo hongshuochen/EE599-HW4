@@ -25,24 +25,25 @@ bazel test tests:q1_student_test
 
 ## Question 2 (25 Points. Medium)
 (Work in progress)
-In this question, we will wirite few functions to measure a given binary tree.
+In this question, we will wirite few recursive functions to *measure* a given binary tree. 
 - Given a binary tree, find its total number of nodes.
 - Given a binary tree, find the sum of numbers from all its nodes.
 - Given a binary tree, find its maximum depth. The maximum depth is defined as the number of nodes along the longest path from the root node down to the farthest leaf node. 
 
-Example: 
-Input: 
-```
-          1
+  Example: 
+  Input: 
+  ```
+            1
           / \
-        2   3
+          2   3
         / \ 
-      4   5
-            \ 
-             6
-```
-Expecteation output: 4
+        4   5
+              \ 
+              6
+  ```
+  Expecteation output: 4
 - Given a binary tree, find the length of the diameter of the tree. The diameter of a binary tree is defined as the length of the longest path between any two nodes in a tree. This path may or may not pass through the tree root.
+
 Example - 1: 
 Input: 
 ```
