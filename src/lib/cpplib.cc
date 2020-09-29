@@ -14,6 +14,23 @@ int CPPLib::sum(const vector<int>& input) {
     
 }
 
+// Question 2
+int CPPLib::NumberOfNodes(CPPLib::TreeNode* root) {
+    
+}
+
+int CPPLib::SumOfNodes(CPPLib::TreeNode* root) {
+    
+}
+
+int CPPLib::DepthOfTree(CPPLib::TreeNode* root) {
+    
+}
+
+int CPPLib::DiameterOfTree(CPPLib::TreeNode* root) {
+    
+}
+
 // Question 3
 void CPPLib::SwapByRefernce(int &input1, int &input2){
     // Please fill up this function.
