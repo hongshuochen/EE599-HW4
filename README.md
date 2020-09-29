@@ -118,10 +118,10 @@ Input:
 Result is true, because it is an valid Binary Search Tree.
 
 1. If you are given an valid Binary Search Tree(BST), find the lowest common ancestor of the two given nodes value a and b `int CPPLib::findLCA(TreeNode* root, int val_a, int val_b)`.
-  - We store binary tree using pointers.
+  - We store binary tree using pointers, using `struct TreeNode`
   - Definition of [Lowest Common Ancestor](https://en.wikipedia.org/wiki/Lowest_common_ancestor): "The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).”
-  - value of nodes (instead of nodes), are used to pass parameter into our function.
-  - the two value of nodes are guaranteed to be found in the Binary Search Tree.
+  - Notice that value of nodes (instead of nodes), are used to pass parameter into our function.
+  - The value of nodes `int val_a, int val_b` are guaranteed to be found in the Binary Search Tree.
   
 Example:
 
@@ -134,6 +134,7 @@ Input:
       4   5
 ```
 LCA of node 4 and node 5 is 2. So we expect to return the value of left child of root node, which is 2.
+
 LCA of node 4 and node 1 is 1. So we expect to return the value of root, which is 1.
 
 
