@@ -12,10 +12,11 @@ using namespace std;
 class CPPLib {
  public:
   //q1
-  vector<int> smallerThanI(const vector<int>& input, int i) {
-    
-  }
+  vector<int> keepOdd(const vector<int>& input, int i);
+  vector<int> transform(const vector<int>& input);
+  int sum(const vector<int>& input);
 
+<<<<<<< HEAD
   vector<int> transform(const vector<int>& input) {
 
   }
@@ -39,6 +40,8 @@ class CPPLib {
   int DepthOfTree(TreeNode* root);
   int DiameterOfTree(TreeNode* root);
 
+=======
+>>>>>>> 72da09d866a6d65202409c3e5d89dd696332dac8
   //q3
   void SwapByRefernce(int &input1, int &input2);
   void SwapByPointer(int *input1, int *input2);

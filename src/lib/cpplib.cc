@@ -2,7 +2,7 @@
 #include "limits"
 
 // Question 1
-vector<int> CPPLib::smallerThanI(const vector<int>& input, int i) {
+vector<int> CPPLib::keepOdd(const vector<int>& input, int i) {
     
 }
 
