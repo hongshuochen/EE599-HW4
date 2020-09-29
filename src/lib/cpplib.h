@@ -16,7 +16,6 @@ class CPPLib {
   vector<int> transform(const vector<int>& input);
   int sum(const vector<int>& input);
 
-<<<<<<< HEAD
   vector<int> transform(const vector<int>& input) {
 
   }
@@ -26,22 +25,11 @@ class CPPLib {
   }
 
   //q2
-  struct TreeNode {
-       int val;
-       TreeNode *left;
-       TreeNode *right;
-       TreeNode() : val(0), left(nullptr), right(nullptr) {}
-       TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-       TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
-  };
-
   int NumberOfNodes(TreeNode* root);
   int SumOfNodes(TreeNode* root);
   int DepthOfTree(TreeNode* root);
   int DiameterOfTree(TreeNode* root);
 
-=======
->>>>>>> 72da09d866a6d65202409c3e5d89dd696332dac8
   //q3
   void SwapByRefernce(int &input1, int &input2);
   void SwapByPointer(int *input1, int *input2);
