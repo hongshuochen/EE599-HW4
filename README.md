@@ -12,9 +12,9 @@
 
 Write several functions in [cpplib.cc](src/lib/cpplib.cc) to satisfy the following requirements:
 
-- **Filter:** Wirte a function ``` ``` that filters out the numbers that are larger than the ```target``` and keeps the rest numbers in vector(use std::copy_if) and returns a new vector that contains the result.
-- **Map:** Write a function ``` ``` that takes a vector of integers as input and outputs a new vector where output[i] = intput[i] + 1 if input[i] is odd or output[i] = intput[i]-1 if input[i] is even (use std::transform).
-- **Reduce:** Write a function ``` ``` that sums up all elements in a vector(use std::accumulate).
+- **copy_if:** Wirte a function ```vector<int> keepOdd(const vector<int>& input);``` that filters out the numbers that are even and keeps the odd numbers in vector(use std::copy_if) and returns a new vector that contains the result.
+- **transform:** Write a function ```vector<int> transform(const vector<int>& input);``` that takes a vector of integers as input and outputs a new vector where output[i] = intput[i] + 1 if input[i] is odd or output[i] = intput[i]-1 if input[i] is even (use std::transform).
+- **accumulate:** Write a function ```int sum(const vector<int>& input);``` that sums up all elements in a vector(use std::accumulate).
 
 Write several tests using GTest for your function in [tests/q1_student_test.cc](tests/q1_student_test.cc).
 

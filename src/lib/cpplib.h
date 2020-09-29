@@ -12,17 +12,10 @@ using namespace std;
 class CPPLib {
  public:
   //q1
-  vector<int> smallerThanI(const vector<int>& input, int i) {
-    
-  }
+  vector<int> keepOdd(const vector<int>& input, int i);
+  vector<int> transform(const vector<int>& input);
+  int sum(const vector<int>& input);
 
-  vector<int> transform(const vector<int>& input) {
-
-  }
-
-  int sum(const vector<int>& input) {
-    
-  }
   //q3
   void SwapByRefernce(int &input1, int &input2);
   void SwapByPointer(int *input1, int *input2);
