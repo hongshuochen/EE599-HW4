@@ -95,7 +95,7 @@ Please create your test cases and run the following command to verify the functi
 bazel test tests:q3_student_test
 ```
 
-## Question 4 (20 Points. Easy)
+## Question 4 (30 Points. Easy - Medium)
 
 - You are given the definition of Binary Search Tree: 
   - The left subtree of a node k contains nodes with key less than the node k's value.
