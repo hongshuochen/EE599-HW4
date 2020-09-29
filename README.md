@@ -97,21 +97,45 @@ bazel test tests:q3_student_test
 
 ## Question 4 (20 Points. Easy)
 
-- Write a function that takes a vector of integers as input. The output is the same vector where all duplicates are removed. Note that the output is the same vector means the function's return type should be void and do the modifications on the input vector.
-  - Example: before: v=[1, 2, 2, 4], after : v=[1, 2, 4]
-  - Solve this for the following cases:
-    - You cannot use std::set
-  
-    ```void CPPLib::UniqeVectorNotBySet(std::vector<int> &input)```
-    - You can use std::set
+- You are given the definition of Binary Search Tree: 
+  - The left subtree of a node k contains nodes with key less than the node k's value.
+  - The right subtree of a node k conatins nodes with key more than the node k's value.
+  - Both left subtree and right subtree are also valid BSTs.
+1. If you are given a binary tree in a vector, try to determine whether the given binary tree is a valid BST.`bool CPPLib::isBST(TreeNode* root)`
+  - We store binary tree using pointers, using `struct TreeNode`
+  - Try to find inorder traversal solution of BST, what and why does it happen?
 
-    ```void CPPLib::UniqeVectorBySet(std::vector<int> &input)```
-- Write a function ```void CPPLib::ReverseVector(std::vector<int> &input)``` that takes a vector of integers as input. The output is the same vector but in the reversed order:
-  - Example: before: [1, 2, 3], after:  [3, 2, 1]
-- Write a function ```void CPPLib::OddVector(std::vector<int> &input)``` that takes a vector of integers as input. The output should be the same vector where all even numbers are removed.
-  - Example: before: [1, 2, 3], after: [1, 3]
-- Write a function ```std::vector<int> CPPLib::UnionVectors(std::vector<int> &input1, std::vector<int> &input2)``` that takes two vectors v1 and v2 and returns a new vector that is the **union** of the values in v1 and v2. All the value in return vector should be unique.
-  - Example: input: (v1=[1, 2, 2, 3], v2=[3, 4, 4, 5]), output = [1, 2, 3, 4, 5]
+Example:
+
+Input: 
+```
+          4
+         / \
+        2   5
+       / \
+      1   3
+```
+Result is true, because it is an valid Binary Search Tree.
+
+1. If you are given an valid Binary Search Tree(BST), find the lowest common ancestor of the two given nodes value a and b `int CPPLib::findLCA(TreeNode* root, int val_a, int val_b)`.
+  - We store binary tree using pointers.
+  - Definition of [Lowest Common Ancestor](https://en.wikipedia.org/wiki/Lowest_common_ancestor): "The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).”
+  - value of nodes (instead of nodes), are used to pass parameter into our function.
+  - the two value of nodes are guaranteed to be found in the Binary Search Tree.
+  
+Example:
+
+Input: 
+```
+          1
+         / \
+        2   3
+       / \ 
+      4   5
+```
+LCA of node 4 and node 5 is 2. So we expect to return the value of left child of root node, which is 2.
+LCA of node 4 and node 1 is 1. So we expect to return the value of root, which is 1.
+
 
 Write several tests using GTest for your function in [tests/q4student_test.cc](tests/q4_student_test.cc).
 
