@@ -2,8 +2,17 @@
 #include "limits"
 
 // Question 1
-// Please create your functions here.
-// You should write 4 functions
+vector<int> CPPLib::smallerThanI(const vector<int>& input, int i) {
+    
+}
+
+vector<int> CPPLib::transform(const vector<int>& input) {
+
+}
+
+int CPPLib::sum(const vector<int>& input) {
+    
+}
 
 // Question 3
 void CPPLib::SwapByRefernce(int &input1, int &input2){

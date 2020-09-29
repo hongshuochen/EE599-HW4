@@ -10,18 +10,11 @@
 
 ## Question 1 (10 Points. Easy)
 
-Write several functions with the same name ```myfunction``` in [cpplib.cc](src/lib/cpplib.cc). And using function overloading to satisfy the following requirements:
+Write several functions in [cpplib.cc](src/lib/cpplib.cc) to satisfy the following requirements:
 
-- All three functions take 2 parameters as the input.
-- If both inputs are integers perform multiplication and return the result.
-- If both inputs are string, concatenate both the strings and return the output.
-- If the first input is an integer and the second input is a string or vice-versa your code should return a string that will hold the concatenated value of both the inputs.
-
-Examples:
-
-- input: (3, 5), output: 15
-- input: (“abc”, “efg”), output: “abcefg”
-- input: (“EE”, 599), output: “EE599”
+- **Filter:** Wirte a function ``` ``` that filters out the numbers that are larger than the ```target``` and keeps the rest numbers in vector(use std::copy_if) and returns a new vector that contains the result.
+- **Map:** Write a function ``` ``` that takes a vector of integers as input and outputs a new vector where output[i] = intput[i] + 1 if input[i] is odd or output[i] = intput[i]-1 if input[i] is even (use std::transform).
+- **Reduce:** Write a function ``` ``` that sums up all elements in a vector(use std::accumulate).
 
 Write several tests using GTest for your function in [tests/q1_student_test.cc](tests/q1_student_test.cc).
 
