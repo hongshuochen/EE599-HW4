@@ -34,43 +34,51 @@ In this question, we will wirite few recursive functions to *measure* a given bi
   Input: 
   ```
             1
-          / \
+           / \
           2   3
-        / \ 
+         / \ 
         4   5
-              \ 
+             \ 
               6
   ```
   Expecteation output: 4
 - Given a binary tree, find the length of the diameter of the tree. The diameter of a binary tree is defined as the length of the longest path between any two nodes in a tree. This path may or may not pass through the tree root.
 
-Example - 1: 
-Input: 
-```
-          1
-         / \
-        2   3
-       / \ 
-      4   5
-            \ 
-             6
-```
-Expecteation output: 4 (the path is 6-5-2-1-3, and it passes the tree root.)
+  Example - 1: 
+  Input: 
+  ```
+            1
+           / \
+          2   3
+         / \ 
+        4   5
+             \ 
+              6
+  ```
+  Expecteation output: 4 (the path is 6-5-2-1-3, and it passes the tree root.)
 
-Example - 2: 
-Input: 
-```
-          1
-         / \
-        2   3
-       / \ 
-      4   5
-     /     \ 
-    7       6
-   /         \
-  8           9
-```
-Expecteation output: 6 (the path is 8-7-4-2-5-6-9, and it does not pass the tree root.)
+  Example - 2: 
+  Input: 
+  ```
+            1
+           / \
+          2   3
+         / \ 
+        4   5
+       / \   \ 
+      7   0   6
+     /         \
+    8           9
+  ```
+  Expecteation output: 6 (the path is 8-7-4-2-5-6-9, and it does not pass the tree root.)
+
+  Hint: Unlike previous questions, you may want to write a helper function. 
+
+Write several tests using GTest for your function in tests/q2_student_test.cc.
+
+Please create your test cases and run the following command to verify the functionality of your program.
+
+bazel test tests:q2_student_test
 
 ## Question 3 (10 Points. Easy)
 
