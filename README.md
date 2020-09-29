@@ -29,6 +29,7 @@ In this question, we will wirite few functions to measure a given binary tree.
 - Given a binary tree, find its total number of nodes.
 - Given a binary tree, find the sum of numbers from all its nodes.
 - Given a binary tree, find its maximum depth. The maximum depth is defined as the number of nodes along the longest path from the root node down to the farthest leaf node. 
+
 Example: 
 Input: 
 ```
@@ -42,8 +43,33 @@ Input:
 ```
 Expecteation output: 4
 - Given a binary tree, find the length of the diameter of the tree. The diameter of a binary tree is defined as the length of the longest path between any two nodes in a tree. This path may or may not pass through the tree root.
+Example - 1: 
+Input: 
+```
+          1
+          / \
+        2   3
+       / \ 
+      4   5
+            \ 
+             6
+```
+Expecteation output: 4 (the path is 6-5-2-1-3, and it passes the tree root.)
 
-
+Example - 2: 
+Input: 
+```
+          1
+          / \
+        2   3
+       / \ 
+      4   5
+     /     \ 
+    7       6
+   /         \
+  8           9
+```
+Expecteation output: 6 (the path is 8-7-4-2-5-6-9, and it does not pass the tree root.)
 
 ## Question 3 (10 Points. Easy)
 
