@@ -76,9 +76,9 @@ In this question, we will write a few recursive functions to *measure* a given b
 Write several tests using GTest for your function in tests/q2_student_test.cc.
 
 Please create your test cases and run the following command to verify the functionality of your program.
-
+```
 bazel test tests:q2_student_test
-
+```
 ## Question 3 (10 Points. Easy)
 
 Write a function swap that will swap the values of the inputs (two integers).
