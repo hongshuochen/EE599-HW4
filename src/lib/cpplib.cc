@@ -32,12 +32,7 @@ int CPPLib::DiameterOfTree(TreeNode* root) {
 }
 
 // Question 3
-void CPPLib::SwapByRefernce(int &input1, int &input2){
-    // Please fill up this function.
-}
-void CPPLib::SwapByPointer(int *input1, int *input2){
-    // Please fill up this function.
-}
+
 
 // Question 4
 bool CPPLib::isBST(TreeNode* root){

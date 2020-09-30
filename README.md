@@ -6,9 +6,9 @@
 - For coding questions, please make sure that your code can run ```bazel run/test```. In this homework, you will need to fill up [cpplib.cc](src/lib/cpplib.cc) and tests in [tests](tests).
 - For submission, please push your answers to Github before the deadline.
 - Deadline: TBD
-- Total: 130 points. 100 points is considered full credit.
+- Total: 120 points. 100 points is considered full credit.
 
-## Question 1 (10 Points. Easy)
+## Question 1 (30 Points. Easy)
 
 Write several functions in [cpplib.cc](src/lib/cpplib.cc) to satisfy the following requirements:
 
@@ -23,7 +23,7 @@ Please create your test cases and run the following command to verify the functi
 bazel test tests:q1_student_test
 ```
 
-## Question 2 (25 Points. Medium)
+## Question 2 (30 Points. Medium)
 In this question, we will write a few recursive functions to *measure* a given binary tree. The definition of ```TreeNode``` could be found in ```cpplib.h```.
 - Given a binary tree, find its total number of nodes.
 - Given a binary tree, find the sum of numbers from all its nodes.
@@ -79,22 +79,38 @@ Please create your test cases and run the following command to verify the functi
 ```
 bazel test tests:q2_student_test
 ```
-## Question 3 (10 Points. Easy)
+## Question 3 (30 Points. Easy)
 
-Write a function swap that will swap the values of the inputs (two integers).
-Implement this using
+Please implement the following class for a Binary Search Tree (BST):
+Only methods that are marked with “GT” should be tested.
 
-- **pass by references**
+```cpp
+struct TreeNode {
+      int val;
+      TreeNode *left;
+      TreeNode *right;
+      TreeNode() : val(0), left(nullptr), right(nullptr) {}
+      TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+      TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
 
-  ```void CPPLib::SwapByRefernce(int &input1, int &input2);```
-- **pass by pointers**
+class BST
+{
+private:
+      TreeNode *root_;
+public:
+      BST();
 
-  ```void CPPLib::SwapByPointer(int *input1, int *input2);```
+      // Insert elements of initial_values
+      // one by one into the Tree
+      BST(std::vector<int> initial_values);
+      ~BST();
 
-Example :\
-Before: x = 20, y = 30 \
-We call Swap(x,y) \
-After: x = 30, y = 20
+      void push(int key); // **GT** Inserts a key inside Tree
+      bool find(int key); // **GT** Returns true if key is in the Tree.
+      bool erase(int key); // **GT** Remove the key from the tree. If not successful, return false.
+};
+```
 
 Write several tests using GTest for your function in [tests/q3_student_test.cc](tests/q3_student_test.cc).
 
