@@ -129,7 +129,7 @@ Result is true, because it is an valid Binary Search Tree.
   - We store binary tree using pointers, using `struct TreeNode`
   - Definition of [Lowest Common Ancestor](https://en.wikipedia.org/wiki/Lowest_common_ancestor): "The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).”
   - Notice that value of nodes (instead of nodes), are used to pass parameter into our function.
-  - The value of nodes `int val_a, int val_b` are guaranteed to be found in the Binary Search Tree.
+  - The value of nodes `int val_a, int val_b` are **guaranteed** to be found in the Binary Search Tree.
   
 Example:
 
