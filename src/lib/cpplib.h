@@ -16,13 +16,6 @@ class CPPLib {
   vector<int> transform(const vector<int>& input);
   int sum(const vector<int>& input);
 
-  vector<int> transform(const vector<int>& input) {
-
-  }
-
-  int sum(const vector<int>& input) {
-    
-  }
 
   //q2
   int NumberOfNodes(TreeNode* root);
