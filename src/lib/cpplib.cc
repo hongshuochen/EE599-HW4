@@ -15,19 +15,19 @@ int CPPLib::sum(const vector<int>& input) {
 }
 
 // Question 2
-int CPPLib::NumberOfNodes(CPPLib::TreeNode* root) {
+int CPPLib::NumberOfNodes(TreeNode* root) {
     
 }
 
-int CPPLib::SumOfNodes(CPPLib::TreeNode* root) {
+int CPPLib::SumOfNodes(TreeNode* root) {
     
 }
 
-int CPPLib::DepthOfTree(CPPLib::TreeNode* root) {
+int CPPLib::DepthOfTree(TreeNode* root) {
     
 }
 
-int CPPLib::DiameterOfTree(CPPLib::TreeNode* root) {
+int CPPLib::DiameterOfTree(TreeNode* root) {
     
 }
 
@@ -40,7 +40,7 @@ void CPPLib::SwapByPointer(int *input1, int *input2){
 }
 
 // Question 4
-void CPPLib::isBST(TreeNode* root){
+bool CPPLib::isBST(TreeNode* root){
 
 }
 
