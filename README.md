@@ -141,6 +141,13 @@ Input:
 ```
 Result is true, because it is a valid Binary Search Tree.
 
+Write several tests using GTest for your function in [tests/q4student_test.cc](tests/q4_student_test.cc).
+
+Please create your test cases and run the following command to verify the functionality of your program.
+```
+bazel test tests:q4_student_test
+```
+
 # Optional Question
 
 ## Question 1 (No Points. Medium)
@@ -166,9 +173,4 @@ LCA of node 4 and node 5 is 2. So we expect to return the value of left child of
 LCA of node 4 and node 1 is 1. So we expect to return the value of root, which is 1.
 
 
-Write several tests using GTest for your function in [tests/q4student_test.cc](tests/q4_student_test.cc).
 
-Please create your test cases and run the following command to verify the functionality of your program.
-```
-bazel test tests:q4_student_test
-```
