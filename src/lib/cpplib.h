@@ -29,6 +29,7 @@ class CPPLib {
 
   //q4
   bool isBST(TreeNode* root);
+  //optional
   int findLCA(TreeNode* root, int val_a, int val_b);
 
   private : 

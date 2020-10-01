@@ -104,13 +104,13 @@ Please create your test cases and run the following command to verify the functi
 bazel test tests:q3_student_test
 ```
 
-## Question 4 (30 Points. Easy - Medium)
+## Question 4 (30 Points. Medium)
 
 - You are given the definition of Binary Search Tree: 
   - The left subtree of a node k contains nodes with key less than the node k's value.
   - The right subtree of a node k conatins nodes with key more than the node k's value.
   - Both left subtree and right subtree are also valid BSTs.
-1. If you are given a binary tree in a vector, try to determine whether the given binary tree is a valid BST.`bool CPPLib::isBST(TreeNode* root)`
+If you are given a binary tree in a vector, try to determine whether the given binary tree is a valid BST.`bool CPPLib::isBST(TreeNode* root)`
   - We store binary tree using pointers, using `struct TreeNode`
   - Try to find inorder traversal solution of BST, what and why does it happen?
 
@@ -124,9 +124,13 @@ Input:
        / \
       1   3
 ```
-Result is true, because it is an valid Binary Search Tree.
+Result is true, because it is a valid Binary Search Tree.
 
-2. If you are given an valid Binary Search Tree(BST), find the lowest common ancestor of the two given nodes value a and b `int CPPLib::findLCA(TreeNode* root, int val_a, int val_b)`.
+# Optional Question
+
+## Question 1 (No Points. Medium)
+
+If you are given a valid Binary Search Tree(BST), find the lowest common ancestor of the two given nodes value a and b `int CPPLib::findLCA(TreeNode* root, int val_a, int val_b)`.
   - We store binary tree using pointers, using `struct TreeNode`
   - Definition of [Lowest Common Ancestor](https://en.wikipedia.org/wiki/Lowest_common_ancestor): "The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).”
   - Notice that value of nodes (instead of nodes), are used to pass parameter into our function.
