@@ -126,7 +126,7 @@ bazel test tests:q3_student_test
   - The right subtree of a node k conatins nodes with key more than the node k's value.
   - Both left subtree and right subtree are also valid BSTs.
 
-If you are given a binary tree in a vector, try to determine whether the given binary tree is a valid BST.Write a function `bool CPPLib::isBST(TreeNode* root)`
+If you are given a binary tree, try to determine whether the given binary tree is a valid BST. Write a function `bool CPPLib::isBST(TreeNode* root)`
   - We store binary tree using pointers, using `struct TreeNode`
   - Try to find inorder traversal solution of BST, what and why does it happen?
 
@@ -140,7 +140,14 @@ Input:
        / \
       1   3
 ```
-Result is true, because it is a valid Binary Search Tree.
+Result is true, because it is a valid BST.
+
+Input: 
+```
+nullptr
+```
+Result is true, as we define 'nullptr' is a valid BST.
+
 
 Write several tests using GTest for your function in [tests/q4student_test.cc](tests/q4_student_test.cc).
 
