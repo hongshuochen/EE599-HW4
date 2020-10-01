@@ -23,10 +23,6 @@ class CPPLib {
   int DepthOfTree(TreeNode* root);
   int DiameterOfTree(TreeNode* root);
 
-  //q3
-  void SwapByRefernce(int &input1, int &input2);
-  void SwapByPointer(int *input1, int *input2);
-
   //q4
   bool isBST(TreeNode* root);
   //optional
@@ -43,4 +39,23 @@ struct TreeNode {
       TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
       TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
+
+// q3
+class BST
+{
+private:
+      TreeNode *root_;
+public:
+      BST();
+
+      // Insert elements of initial_values
+      // one by one into the Tree
+      BST(std::vector<int> initial_values);
+      ~BST();
+
+      void push(int key); // **GT** Inserts a key inside Tree
+      bool find(int key); // **GT** Returns true if key is in the Tree.
+      bool erase(int key); // **GT** Remove the key from the tree. If not successful, return false.
+};
+
 #endif

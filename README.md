@@ -6,9 +6,9 @@
 - For coding questions, please make sure that your code can run ```bazel run/test```. In this homework, you will need to fill up [cpplib.cc](src/lib/cpplib.cc) and tests in [tests](tests).
 - For submission, please push your answers to Github before the deadline.
 - Deadline: TBD
-- Total: 130 points. 100 points is considered full credit.
+- Total: 120 points. 100 points is considered full credit.
 
-## Question 1 (10 Points. Easy)
+## Question 1 (30 Points. Easy)
 
 Write several functions in [cpplib.cc](src/lib/cpplib.cc) to satisfy the following requirements:
 
@@ -23,9 +23,8 @@ Please create your test cases and run the following command to verify the functi
 bazel test tests:q1_student_test
 ```
 
-## Question 2 (25 Points. Medium)
-(Work in progress)
-In this question, we will wirite few recursive functions to *measure* a given binary tree. 
+## Question 2 (30 Points. Medium)
+In this question, we will write a few recursive functions to *measure* a given binary tree. The definition of ```TreeNode``` could be found in ```cpplib.h```.
 - Given a binary tree, find its total number of nodes.
 - Given a binary tree, find the sum of numbers from all its nodes.
 - Given a binary tree, find its maximum depth. The maximum depth is defined as the number of nodes along the longest path from the root node down to the farthest leaf node. 
@@ -41,7 +40,7 @@ In this question, we will wirite few recursive functions to *measure* a given bi
              \ 
               6
   ```
-  Expecteation output: 4
+  Expected output: 4
 - Given a binary tree, find the length of the diameter of the tree. The diameter of a binary tree is defined as the length of the longest path between any two nodes in a tree. This path may or may not pass through the tree root.
 
   Example - 1: 
@@ -55,7 +54,7 @@ In this question, we will wirite few recursive functions to *measure* a given bi
              \ 
               6
   ```
-  Expecteation output: 4 (the path is 6-5-2-1-3, and it passes the tree root.)
+  Expected output: 4 (the path is 6-5-2-1-3, and it passes the tree root.)
 
   Example - 2: 
   Input: 
@@ -70,32 +69,48 @@ In this question, we will wirite few recursive functions to *measure* a given bi
      /         \
     8           9
   ```
-  Expecteation output: 6 (the path is 8-7-4-2-5-6-9, and it does not pass the tree root.)
+  Expected output: 6 (the path is 8-7-4-2-5-6-9, and it does not pass the tree root.)
 
   Hint: Unlike previous questions, you may want to write a helper function. 
 
 Write several tests using GTest for your function in tests/q2_student_test.cc.
 
 Please create your test cases and run the following command to verify the functionality of your program.
-
+```
 bazel test tests:q2_student_test
+```
+## Question 3 (30 Points. Easy)
 
-## Question 3 (10 Points. Easy)
+Please implement the following class for a Binary Search Tree (BST):
+Only methods that are marked with “GT” should be tested.
 
-Write a function swap that will swap the values of the inputs (two integers).
-Implement this using
+```cpp
+struct TreeNode {
+      int val;
+      TreeNode *left;
+      TreeNode *right;
+      TreeNode() : val(0), left(nullptr), right(nullptr) {}
+      TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+      TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
 
-- **pass by references**
+class BST
+{
+private:
+      TreeNode *root_;
+public:
+      BST();
 
-  ```void CPPLib::SwapByRefernce(int &input1, int &input2);```
-- **pass by pointers**
+      // Insert elements of initial_values
+      // one by one into the Tree
+      BST(std::vector<int> initial_values);
+      ~BST();
 
-  ```void CPPLib::SwapByPointer(int *input1, int *input2);```
-
-Example :\
-Before: x = 20, y = 30 \
-We call Swap(x,y) \
-After: x = 30, y = 20
+      void push(int key); // **GT** Inserts a key inside Tree
+      bool find(int key); // **GT** Returns true if key is in the Tree.
+      bool erase(int key); // **GT** Remove the key from the tree. If not successful, return false.
+};
+```
 
 Write several tests using GTest for your function in [tests/q3_student_test.cc](tests/q3_student_test.cc).
 
