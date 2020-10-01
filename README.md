@@ -125,6 +125,7 @@ bazel test tests:q3_student_test
   - The left subtree of a node k contains nodes with key less than the node k's value.
   - The right subtree of a node k conatins nodes with key more than the node k's value.
   - Both left subtree and right subtree are also valid BSTs.
+
 If you are given a binary tree in a vector, try to determine whether the given binary tree is a valid BST.`bool CPPLib::isBST(TreeNode* root)`
   - We store binary tree using pointers, using `struct TreeNode`
   - Try to find inorder traversal solution of BST, what and why does it happen?
