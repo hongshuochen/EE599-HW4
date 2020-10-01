@@ -40,7 +40,7 @@ In this question, we will write a few recursive functions to *measure* a given b
              \ 
               6
   ```
-  Expecteation output: 4
+  Expected output: 4
 - Given a binary tree, find the length of the diameter of the tree. The diameter of a binary tree is defined as the length of the longest path between any two nodes in a tree. This path may or may not pass through the tree root.
 
   Example - 1: 
@@ -54,7 +54,7 @@ In this question, we will write a few recursive functions to *measure* a given b
              \ 
               6
   ```
-  Expecteation output: 4 (the path is 6-5-2-1-3, and it passes the tree root.)
+  Expected output: 4 (the path is 6-5-2-1-3, and it passes the tree root.)
 
   Example - 2: 
   Input: 
@@ -69,7 +69,7 @@ In this question, we will write a few recursive functions to *measure* a given b
      /         \
     8           9
   ```
-  Expecteation output: 6 (the path is 8-7-4-2-5-6-9, and it does not pass the tree root.)
+  Expected output: 6 (the path is 8-7-4-2-5-6-9, and it does not pass the tree root.)
 
   Hint: Unlike previous questions, you may want to write a helper function. 
 
