@@ -12,7 +12,7 @@ using namespace std;
 class CPPLib {
  public:
   //q1
-  vector<int> keepOdd(const vector<int>& input, int i);
+  vector<int> keepOdd(const vector<int>& input);
   vector<int> transform(const vector<int>& input);
   int sum(const vector<int>& input);
 
