@@ -189,13 +189,13 @@ Example:
 Input:
 
 ```
-          1
+          4
          / \
-        2   3
+        2   5
        / \
-      4   5
+      1   3
 ```
 
-LCA of node 4 and node 5 is 2. So we expect to return the value of left child of root node, which is 2.
+LCA of node 1 and node 3 is 2. We expect to return the value of left child of root node, which is 2.
 
-LCA of node 4 and node 1 is 1. So we expect to return the value of root, which is 1.
+LCA of node 4 and node 1 is 4. We expect to return the value of root, which is 4.
